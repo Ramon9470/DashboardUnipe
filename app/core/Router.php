@@ -22,6 +22,11 @@ class Router {
                 $controller->index();
                 break;
 
+            case 'logut':
+                require_once __DIR__ . '/logout.php';
+                $controller = new Logout();
+                $controller->index();
+
             default:
                 http_response_code(404);
                 echo "Página não encontrada.";

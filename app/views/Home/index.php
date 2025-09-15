@@ -1,3 +1,5 @@
+include = ["HomeController"];
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -10,7 +12,7 @@
 </head>
 <body>
     <div class="container mt-5">
-        <h1 class="text-center text-primary">🏠 <?php echo $title ?></h1>
+        <h1 class="text-center text-primary"><?php echo $title ?></h1>
         <p class="text-center">Bem-vindo ao sistema!</p>
         <p class="text-center"><a href="login" class="btn btn-success">Ir para Login</a></p>
 
