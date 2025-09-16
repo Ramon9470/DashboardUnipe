@@ -27,6 +27,12 @@ class Router {
                 $controller = new Logout();
                 $controller->index();
 
+            case 'disciplinas':
+                require_once __DIR__ . '/../../app/controllers/DisciplinasController.php';
+                $controller = new DisciplinasController();
+                $controller->index();
+                break;
+
             default:
                 http_response_code(404);
                 echo "Página não encontrada.";

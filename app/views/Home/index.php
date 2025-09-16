@@ -1,4 +1,7 @@
-include = ["HomeController"];
+<?php
+//include ["HomeController"];
+
+?>
 
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -34,7 +37,7 @@ include = ["HomeController"];
         <span class="icon">&#8962;</span>
         <span class="menu-label">Início</span>
     </a>
-    <a href="#" class="menu-btn" data-page="materias" title="Minhas Matérias">
+    <a href="<?php echo __DIR__ .'DisciplinasController'; ?>" class="menu-btn" data-page="materias" title="Minhas Matérias">
         <span class="icon">&#128221;</span>
         <span class="menu-label">Matérias</span>
     </a>
